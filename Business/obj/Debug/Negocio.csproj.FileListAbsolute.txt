@@ -1,0 +1,9 @@
+C:\Users\emman\Downloads\crm\Negocio\bin\Debug\Negocio.dll
+C:\Users\emman\Downloads\crm\Negocio\bin\Debug\Negocio.pdb
+C:\Users\emman\Downloads\crm\Negocio\bin\Debug\Dominio.dll
+C:\Users\emman\Downloads\crm\Negocio\bin\Debug\Dominio.pdb
+C:\Users\emman\Downloads\crm\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\emman\Downloads\crm\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\emman\Downloads\crm\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\emman\Downloads\crm\Negocio\obj\Debug\Negocio.dll
+C:\Users\emman\Downloads\crm\Negocio\obj\Debug\Negocio.pdb
