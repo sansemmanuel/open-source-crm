@@ -7,8 +7,8 @@ Gym CRM System is a comprehensive Customer Relationship Management (CRM) solutio
 ## Features
 
 - **Membership Management**: Track active and expired memberships, renewals, and new sign-ups.
-- **Attendance Tracking**: Monitor client attendance and generate attendance reports.
-- **Payment Processing**: Handle membership fees, track payments, and generate invoices.
+- **Attendance Tracking**: Monitor client attendance and generate attendance reports. //TODO
+- **Payment Processing**: Handle membership fees, track payments, and generate invoices. //TODO
 - **Client Communication**: Send notifications and updates to clients via email or SMS. //TODO
 - **Reports and Analytics**: Generate reports on membership statistics, financials, and attendance trends.
 
