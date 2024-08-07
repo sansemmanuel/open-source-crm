@@ -160,26 +160,6 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 
-/****** Object:  Table [dbo].[HistorialRevision]    Script Date: 8/5/2024 8:31:02 PM ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
-CREATE TABLE [dbo].[HistorialRevision](
-	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[EspecificacionId] [int] NULL,
-	[Revision] [int] NULL,
-	[FechaRevision] [date] NULL,
-	[UltimaModificacion] [date] NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
-GO
-
 /****** Object:  Table [dbo].[Ingresos]    Script Date: 8/5/2024 8:31:02 PM ******/
 SET ANSI_NULLS ON
 GO
@@ -435,9 +415,6 @@ GO
 ALTER TABLE [dbo].[FichaMedica] CHECK CONSTRAINT [FK_clienteId_FichaMedica]
 GO
 
-ALTER TABLE [dbo].[HistorialRevision]  WITH CHECK ADD FOREIGN KEY([EspecificacionId])
-REFERENCES [dbo].[EspecificacionTecnica] ([Id])
-GO
 
 ALTER TABLE [dbo].[Ingresos]  WITH CHECK ADD  CONSTRAINT [FK_clienteIngreso] FOREIGN KEY([clienteId])
 REFERENCES [dbo].[Clientes] ([clienteId])
