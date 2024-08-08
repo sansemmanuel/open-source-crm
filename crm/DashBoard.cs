@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using Negocio;
 using FontAwesome.Sharp;
 using System.Drawing.Drawing2D;
+using Crm;
 
 namespace TPFinalNivel2_Sansberro
 {
@@ -14,9 +15,7 @@ namespace TPFinalNivel2_Sansberro
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Button currentButton;
-
-
-        //  private DashBoard model;
+        //private DashBoard model;
 
 
         #region structs
@@ -34,16 +33,9 @@ namespace TPFinalNivel2_Sansberro
         public DashBoard()
         {
             InitializeComponent();
-            SetPanelBorderRad();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 55);
             panelLeft.Controls.Add(leftBorderBtn);
-            //Default - Last 7 days
-            dtpStartDate.Value = DateTime.Today.AddDays(-7);
-            dtpEndDate.Value = DateTime.Now;
-            btnLast7Days.Select();
-            SetBtnColor(btnLast7Days);
-            LoadData();
         }
 
         private void DashBoard_Load(object sender, EventArgs e)
@@ -147,7 +139,7 @@ namespace TPFinalNivel2_Sansberro
             childForm.Dock = DockStyle.Fill;
 
             // add child form to the main panel and show it
-             panelDashboard.Controls.Add(childForm);
+            panelDashboard.Controls.Add(childForm);
             panelDashboard.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
@@ -160,93 +152,9 @@ namespace TPFinalNivel2_Sansberro
             //iconCurrentChildForm.IconColor = Color.MediumPurple;
             //lblTitleChildForm.Text = "Home";
         }
-        private void LoadData()
-        {
-            MemberBusiness negocio = new MemberBusiness();
-            int activemembernum;
-            activemembernum = negocio.GetActiveMembersNum();
-            var refreshData = negocio.LoadData(dtpStartDate.Value, dtpEndDate.Value);
-            if (refreshData == true)
-            {
-                lblActive.Text = activemembernum.ToString();
-                lblIncome.Text = "$" + negocio.Income.ToString();
-                lblVisitors.Text = negocio.TotalVisitors.ToString();
-
-                //lblTotalProfit.Text = "$" + model.TotalProfit.ToString();
-                lblTranNumber.Text = negocio.TranNumber.ToString();
-                //lblNumSuppliers.Text = model.NumSuppliers.ToString();
-                //lblNumProducts.Text = model.NumProducts.ToString();
-                chartGrossRevenue.DataSource = negocio.GrossRevenueList;
-                chartGrossRevenue.Series[0].XValueMember = "Date";
-                chartGrossRevenue.Series[0].YValueMembers = "TotalAmount";
-                chartGrossRevenue.DataBind();
-                charTopHours.DataSource = negocio.TopProductsList;
-                charTopHours.Series[0].XValueMember = "Key";
-                charTopHours.Series[0].YValueMembers = "Value";
-                charTopHours.DataBind();
-                dataGridView1.DataSource = negocio.UnderstockList;
-                dataGridView1.Columns[0].HeaderText = "Name";
-                dataGridView1.Columns[1].HeaderText = "Hour";
-                Console.WriteLine("Loaded view :)");
-            }
-            else Console.WriteLine("View not loaded, same query");
-        }
-        private void DisableDtp()
-        {
-            dtpStartDate.Enabled = false;
-            dtpEndDate.Enabled = false;
-            btnOkCustomDate.Visible = false;
-        }
 
 
 
-        #endregion
-
-        #region events
-        private void btnToday_Click(object sender, EventArgs e)
-        {
-            dtpStartDate.Value = DateTime.Today;
-            dtpEndDate.Value = DateTime.Now;
-            LoadData();
-            SetBtnColor(sender);
-            DisableDtp();
-        }
-        private void btnLast7Days_Click(object sender, EventArgs e)
-        {
-            dtpStartDate.Value = DateTime.Today.AddDays(-7);
-            dtpEndDate.Value = DateTime.Now;
-            LoadData();
-            SetBtnColor(sender);
-            DisableDtp();
-        }
-        private void btnLast30Days_Click(object sender, EventArgs e)
-        {
-            dtpStartDate.Value = DateTime.Today.AddDays(-30);
-            dtpEndDate.Value = DateTime.Now;
-            LoadData();
-            SetBtnColor(sender);
-            DisableDtp();
-        }
-        private void btnThisMonth_Click(object sender, EventArgs e)
-        {
-            dtpStartDate.Value = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
-            dtpEndDate.Value = DateTime.Now;
-            LoadData();
-            SetBtnColor(sender);
-            DisableDtp();
-        }
-        private void btnCustomDate_Click(object sender, EventArgs e)
-        {
-            dtpStartDate.Enabled = true;
-            dtpEndDate.Enabled = true;
-            btnOkCustomDate.Visible = true;
-            SetBtnColor(sender);
-
-        }
-        private void btnOkCustomDate_Click(object sender, EventArgs e)
-        {
-            LoadData();
-        }
 
 
 
@@ -265,7 +173,7 @@ namespace TPFinalNivel2_Sansberro
         private void btnReport_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            //   OpenChildForm(new FormProducts());
+            OpenChildForm(new Reports());
         }
         private void btnLeads_Click(object sender, EventArgs e)
         {
@@ -293,191 +201,13 @@ namespace TPFinalNivel2_Sansberro
 
         }
 
-        private void btnCustomDate_Click_1(object sender, EventArgs e)
-        {
-            dtpStartDate.Enabled = true;
-            dtpEndDate.Enabled = true;
-            btnOkCustomDate.Visible = true;
-        }
-
-        private void lblStartDate_Click(object sender, EventArgs e)
-        {
-            if (currentBtn == btnCustomDate)
-            {
-                MessageBox.Show("lol");
-                dtpStartDate.Select();
-                SendKeys.Send("%{DOWN}");
-
-            }
-        }
-
-        private void lblEndDate_Click(object sender, EventArgs e)
-        {
-            if (currentBtn == btnCustomDate)
-            {
-                dtpEndDate.Show();
-                SendKeys.Send("%{DOWN}");
-
-            }
-        }
-
-        #endregion
-
-        #region Border radius panels
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            int borderRadius = 20; // Radio del borde redondeado
-            Rectangle rect = panel1.ClientRectangle;
-
-            // Crear un GraphicsPath para definir el rectángulo redondeado
-            GraphicsPath path = new GraphicsPath();
-            path.AddArc(rect.Left, rect.Top, borderRadius, borderRadius, 180, 90); // Esquina superior izquierda
-            path.AddArc(rect.Right - borderRadius, rect.Top, borderRadius, borderRadius, 270, 90); // Esquina superior derecha
-            path.AddArc(rect.Right - borderRadius, rect.Bottom - borderRadius, borderRadius, borderRadius, 0, 90); // Esquina inferior derecha
-            path.AddArc(rect.Left, rect.Bottom - borderRadius, borderRadius, borderRadius, 90, 90); // Esquina inferior izquierda
-            path.CloseAllFigures();
-
-            // Establecer la región del panel con los bordes redondeados
-            panel1.Region = new Region(path);
-
-            // Habilitar antialiasing para un renderizado más suave
-            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-            // Opcional: Dibujar un borde alrededor del panel para visualizar los bordes redondeados
-            using (Pen pen = new Pen(Color.Gainsboro, 3)) // Ajustar el color y el grosor del borde si es necesario
-            {
-                e.Graphics.DrawPath(pen, path);
-            }
-        }
-
-        private void chartGrossRevenue_Paint(object sender, PaintEventArgs e)
-        {
-            int borderRadius = 20; // Radio del borde redondeado
-            Rectangle rect = chartGrossRevenue.ClientRectangle;
-
-            GraphicsPath path = new GraphicsPath();
-            path.AddArc(rect.Left, rect.Top, borderRadius, borderRadius, 180, 90); // Esquina superior izquierda
-            path.AddArc(rect.Right - borderRadius, rect.Top, borderRadius, borderRadius, 270, 90); // Esquina superior derecha
-            path.AddArc(rect.Right - borderRadius, rect.Bottom - borderRadius, borderRadius, borderRadius, 0, 90); // Esquina inferior derecha
-            path.AddArc(rect.Left, rect.Bottom - borderRadius, borderRadius, borderRadius, 90, 90); // Esquina inferior izquierda
-            path.CloseAllFigures();
-
-            chartGrossRevenue.Region = new Region(path);
-
-            // Habilitar antialiasing para suavizar el renderizado
-            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-            using (Pen pen = new Pen(Color.Gainsboro, 3)) // Ajustar el color y el grosor del borde si es necesario
-            {
-                e.Graphics.DrawPath(pen, path);
-            }
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-            int borderRadius = 20; // Radio del borde redondeado
-            Rectangle rect = panel2.ClientRectangle;
-
-            GraphicsPath path = new GraphicsPath();
-            path.AddArc(rect.Left, rect.Top, borderRadius, borderRadius, 180, 90); // Esquina superior izquierda
-            path.AddArc(rect.Right - borderRadius, rect.Top, borderRadius, borderRadius, 270, 90); // Esquina superior derecha
-            path.AddArc(rect.Right - borderRadius, rect.Bottom - borderRadius, borderRadius, borderRadius, 0, 90); // Esquina inferior derecha
-            path.AddArc(rect.Left, rect.Bottom - borderRadius, borderRadius, borderRadius, 90, 90); // Esquina inferior izquierda
-            path.CloseAllFigures();
-
-            panel2.Region = new Region(path);
-
-            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-            using (Pen pen = new Pen(Color.Gainsboro, 3)) // Ajustar el color y el grosor del borde si es necesario
-            {
-                e.Graphics.DrawPath(pen, path);
-            }
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-            int borderRadius = 20; // Radio del borde redondeado
-            Rectangle rect = panel3.ClientRectangle;
-
-            GraphicsPath path = new GraphicsPath();
-            path.AddArc(rect.Left, rect.Top, borderRadius, borderRadius, 180, 90); // Esquina superior izquierda
-            path.AddArc(rect.Right - borderRadius, rect.Top, borderRadius, borderRadius, 270, 90); // Esquina superior derecha
-            path.AddArc(rect.Right - borderRadius, rect.Bottom - borderRadius, borderRadius, borderRadius, 0, 90); // Esquina inferior derecha
-            path.AddArc(rect.Left, rect.Bottom - borderRadius, borderRadius, borderRadius, 90, 90); // Esquina inferior izquierda
-            path.CloseAllFigures();
-
-            panel3.Region = new Region(path);
-
-            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-            using (Pen pen = new Pen(Color.Gainsboro, 3)) // Ajustar el color y el grosor del borde si es necesario
-            {
-                e.Graphics.DrawPath(pen, path);
-            }
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-            int borderRadius = 20; // Radio del borde redondeado
-            Rectangle rect = panel4.ClientRectangle;
-
-            GraphicsPath path = new GraphicsPath();
-            path.AddArc(rect.Left, rect.Top, borderRadius, borderRadius, 180, 90); // Esquina superior izquierda
-            path.AddArc(rect.Right - borderRadius, rect.Top, borderRadius, borderRadius, 270, 90); // Esquina superior derecha
-            path.AddArc(rect.Right - borderRadius, rect.Bottom - borderRadius, borderRadius, borderRadius, 0, 90); // Esquina inferior derecha
-            path.AddArc(rect.Left, rect.Bottom - borderRadius, borderRadius, borderRadius, 90, 90); // Esquina inferior izquierda
-            path.CloseAllFigures();
-
-            panel4.Region = new Region(path);
-
-            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-            using (Pen pen = new Pen(Color.Gainsboro, 3)) // Ajustar el color y el grosor del borde si es necesario
-            {
-                e.Graphics.DrawPath(pen, path);
-            }
-        }
-
-        private void charTopHours_Paint(object sender, PaintEventArgs e)
-        {
-            int borderRadius = 20; // Radio del borde redondeado
-            Rectangle rect = charTopHours.ClientRectangle;
-
-            GraphicsPath path = new GraphicsPath();
-            path.AddArc(rect.Left, rect.Top, borderRadius, borderRadius, 180, 90); // Esquina superior izquierda
-            path.AddArc(rect.Right - borderRadius, rect.Top, borderRadius, borderRadius, 270, 90); // Esquina superior derecha
-            path.AddArc(rect.Right - borderRadius, rect.Bottom - borderRadius, borderRadius, borderRadius, 0, 90); // Esquina inferior derecha
-            path.AddArc(rect.Left, rect.Bottom - borderRadius, borderRadius, borderRadius, 90, 90); // Esquina inferior izquierda
-            path.CloseAllFigures();
-
-            charTopHours.Region = new Region(path);
-
-            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-            using (Pen pen = new Pen(Color.Gainsboro, 3)) // Ajustar el color y el grosor del borde si es necesario
-            {
-                e.Graphics.DrawPath(pen, path);
-            }
-        }
-
-        #endregion
 
 
-        private void SetPanelBorderRad()
-        {
-            this.panel1.Paint += new PaintEventHandler(this.panel1_Paint);
-            this.panel2.Paint += new PaintEventHandler(this.panel2_Paint);
-            this.panel3.Paint += new PaintEventHandler(this.panel2_Paint);
-            this.panel4.Paint += new PaintEventHandler(this.panel2_Paint);
-            this.charTopHours.Paint += new PaintEventHandler(this.charTopHours_Paint);
-            this.chartGrossRevenue.Paint += new PaintEventHandler(this.chartGrossRevenue_Paint);
-        }
 
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 
+
+    #endregion
+
 }
+
