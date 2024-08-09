@@ -29,7 +29,7 @@ namespace TPFinalNivel2_Sansberro
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tbBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -53,7 +53,7 @@ namespace TPFinalNivel2_Sansberro
             // tbBuscar
             // 
             this.tbBuscar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbBuscar.Location = new System.Drawing.Point(59, 15);
+            this.tbBuscar.Location = new System.Drawing.Point(85, 20);
             this.tbBuscar.Name = "tbBuscar";
             this.tbBuscar.Size = new System.Drawing.Size(155, 22);
             this.tbBuscar.TabIndex = 0;
@@ -63,7 +63,7 @@ namespace TPFinalNivel2_Sansberro
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 20);
+            this.label1.Location = new System.Drawing.Point(38, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 2;
@@ -71,8 +71,9 @@ namespace TPFinalNivel2_Sansberro
             // 
             // btnAgregar
             // 
+            this.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(896, 137);
+            this.btnAgregar.Location = new System.Drawing.Point(922, 142);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(193, 27);
             this.btnAgregar.TabIndex = 6;
@@ -82,8 +83,9 @@ namespace TPFinalNivel2_Sansberro
             // 
             // btnMod
             // 
+            this.btnMod.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnMod.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMod.Location = new System.Drawing.Point(896, 170);
+            this.btnMod.Location = new System.Drawing.Point(922, 175);
             this.btnMod.Name = "btnMod";
             this.btnMod.Size = new System.Drawing.Size(193, 27);
             this.btnMod.TabIndex = 7;
@@ -93,8 +95,9 @@ namespace TPFinalNivel2_Sansberro
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(896, 204);
+            this.btnEliminar.Location = new System.Drawing.Point(922, 209);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(193, 27);
             this.btnEliminar.TabIndex = 8;
@@ -104,8 +107,9 @@ namespace TPFinalNivel2_Sansberro
             // 
             // btnDetalle
             // 
+            this.btnDetalle.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnDetalle.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDetalle.Location = new System.Drawing.Point(896, 237);
+            this.btnDetalle.Location = new System.Drawing.Point(922, 242);
             this.btnDetalle.Name = "btnDetalle";
             this.btnDetalle.Size = new System.Drawing.Size(193, 27);
             this.btnDetalle.TabIndex = 9;
@@ -116,7 +120,7 @@ namespace TPFinalNivel2_Sansberro
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(295, 49);
+            this.btnBuscar.Location = new System.Drawing.Point(321, 54);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(101, 20);
             this.btnBuscar.TabIndex = 4;
@@ -126,8 +130,9 @@ namespace TPFinalNivel2_Sansberro
             // 
             // btnActualizar
             // 
+            this.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnActualizar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(896, 107);
+            this.btnActualizar.Location = new System.Drawing.Point(922, 112);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(193, 24);
             this.btnActualizar.TabIndex = 5;
@@ -139,7 +144,7 @@ namespace TPFinalNivel2_Sansberro
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 53);
+            this.label2.Location = new System.Drawing.Point(38, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 10;
@@ -149,7 +154,7 @@ namespace TPFinalNivel2_Sansberro
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(230, 20);
+            this.label3.Location = new System.Drawing.Point(256, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 12;
@@ -160,7 +165,7 @@ namespace TPFinalNivel2_Sansberro
             this.cbCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCampo.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCampo.FormattingEnabled = true;
-            this.cbCampo.Location = new System.Drawing.Point(93, 48);
+            this.cbCampo.Location = new System.Drawing.Point(119, 53);
             this.cbCampo.Name = "cbCampo";
             this.cbCampo.Size = new System.Drawing.Size(121, 21);
             this.cbCampo.TabIndex = 1;
@@ -171,7 +176,7 @@ namespace TPFinalNivel2_Sansberro
             this.cbCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCriterio.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCriterio.FormattingEnabled = true;
-            this.cbCriterio.Location = new System.Drawing.Point(275, 14);
+            this.cbCriterio.Location = new System.Drawing.Point(301, 19);
             this.cbCriterio.Name = "cbCriterio";
             this.cbCriterio.Size = new System.Drawing.Size(121, 21);
             this.cbCriterio.TabIndex = 2;
@@ -179,9 +184,13 @@ namespace TPFinalNivel2_Sansberro
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoSize = true;
             this.panel1.Controls.Add(this.dgvStock);
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(15, 107);
+            this.panel1.Location = new System.Drawing.Point(41, 112);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(862, 599);
             this.panel1.TabIndex = 13;
@@ -198,14 +207,14 @@ namespace TPFinalNivel2_Sansberro
             this.dgvStock.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvStock.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStock.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStock.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvStock.EnableHeadersVisualStyles = false;
             this.dgvStock.Location = new System.Drawing.Point(0, 0);
@@ -219,20 +228,21 @@ namespace TPFinalNivel2_Sansberro
             // 
             // pbxDetail
             // 
-            this.pbxDetail.Location = new System.Drawing.Point(896, 270);
+            this.pbxDetail.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pbxDetail.Location = new System.Drawing.Point(922, 275);
             this.pbxDetail.Name = "pbxDetail";
             this.pbxDetail.Size = new System.Drawing.Size(193, 185);
             this.pbxDetail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxDetail.TabIndex = 14;
             this.pbxDetail.TabStop = false;
             // 
-            // stock
+            // MemberList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1102, 744);
+            this.ClientSize = new System.Drawing.Size(1128, 749);
             this.Controls.Add(this.pbxDetail);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cbCriterio);
@@ -249,7 +259,7 @@ namespace TPFinalNivel2_Sansberro
             this.Controls.Add(this.tbBuscar);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
-            this.Name = "stock";
+            this.Name = "MemberList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stock";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

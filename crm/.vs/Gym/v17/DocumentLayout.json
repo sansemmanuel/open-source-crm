@@ -3,26 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\emman\\Downloads\\crm\\crm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3AB4BA80-64AC-4C32-8A8C-C69897686007}|..\\Business\\Business.csproj|c:\\users\\emman\\downloads\\crm\\business\\memberbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AB4BA80-64AC-4C32-8A8C-C69897686007}|..\\Business\\Business.csproj|c:\\users\\emman\\downloads\\crm\\business\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE042AA3-749A-41E0-A5BD-AC78CD02DAA6}|Forms.csproj|c:\\users\\emman\\downloads\\crm\\crm\\memberlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FE042AA3-749A-41E0-A5BD-AC78CD02DAA6}|Forms.csproj|solutionrelative:memberlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE042AA3-749A-41E0-A5BD-AC78CD02DAA6}|Forms.csproj|c:\\users\\emman\\downloads\\crm\\crm\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FE042AA3-749A-41E0-A5BD-AC78CD02DAA6}|Forms.csproj|solutionrelative:reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FE042AA3-749A-41E0-A5BD-AC78CD02DAA6}|Forms.csproj|c:\\users\\emman\\downloads\\crm\\crm\\registerpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FE042AA3-749A-41E0-A5BD-AC78CD02DAA6}|Forms.csproj|solutionrelative:registerpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FE042AA3-749A-41E0-A5BD-AC78CD02DAA6}|Forms.csproj|c:\\users\\emman\\downloads\\crm\\crm\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FE042AA3-749A-41E0-A5BD-AC78CD02DAA6}|Forms.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE042AA3-749A-41E0-A5BD-AC78CD02DAA6}|Forms.csproj|c:\\users\\emman\\downloads\\crm\\crm\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE042AA3-749A-41E0-A5BD-AC78CD02DAA6}|Forms.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE042AA3-749A-41E0-A5BD-AC78CD02DAA6}|Forms.csproj|c:\\users\\emman\\downloads\\crm\\crm\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{FE042AA3-749A-41E0-A5BD-AC78CD02DAA6}|Forms.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 286,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,28 +41,43 @@
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DashBoard.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\Downloads\\crm\\crm\\DashBoard.cs",
-              "RelativeDocumentMoniker": "DashBoard.cs",
-              "ToolTip": "C:\\Users\\emman\\Downloads\\crm\\crm\\DashBoard.cs",
-              "RelativeToolTip": "DashBoard.cs",
-              "ViewState": "AQIAAJ0AAAAAAAAAAAAAAK8AAAAlAAAA",
+              "DocumentIndex": 0,
+              "Title": "MemberList.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\emman\\Downloads\\crm\\crm\\MemberList.cs",
+              "RelativeDocumentMoniker": "MemberList.cs",
+              "ToolTip": "C:\\Users\\emman\\Downloads\\crm\\crm\\MemberList.cs [Design]",
+              "RelativeToolTip": "MemberList.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T20:48:23.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-09T02:06:27.348Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "RegisterPayment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\emman\\Downloads\\crm\\crm\\RegisterPayment.cs",
+              "RelativeDocumentMoniker": "RegisterPayment.cs",
+              "ToolTip": "C:\\Users\\emman\\Downloads\\crm\\crm\\RegisterPayment.cs [Design]",
+              "RelativeToolTip": "RegisterPayment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T02:06:24.076Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Reports.cs [Design]",
               "DocumentMoniker": "C:\\Users\\emman\\Downloads\\crm\\crm\\Reports.cs",
               "RelativeDocumentMoniker": "Reports.cs",
               "ToolTip": "C:\\Users\\emman\\Downloads\\crm\\crm\\Reports.cs [Design]",
               "RelativeToolTip": "Reports.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T20:40:58.973Z",
+              "WhenOpened": "2024-08-09T01:59:08.08Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -80,47 +89,8 @@
               "ToolTip": "C:\\Users\\emman\\Downloads\\crm\\crm\\DashBoard.cs [Design]",
               "RelativeToolTip": "DashBoard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T20:39:24.282Z",
+              "WhenOpened": "2024-08-09T01:58:58.533Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MemberBusiness.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\Downloads\\crm\\Business\\MemberBusiness.cs",
-              "RelativeDocumentMoniker": "..\\Business\\MemberBusiness.cs",
-              "ToolTip": "C:\\Users\\emman\\Downloads\\crm\\Business\\MemberBusiness.cs",
-              "RelativeToolTip": "..\\Business\\MemberBusiness.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T20:28:04.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataAccess.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\Downloads\\crm\\Business\\DataAccess.cs",
-              "RelativeDocumentMoniker": "..\\Business\\DataAccess.cs",
-              "ToolTip": "C:\\Users\\emman\\Downloads\\crm\\Business\\DataAccess.cs",
-              "RelativeToolTip": "..\\Business\\DataAccess.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T20:24:47.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\emman\\Downloads\\crm\\crm\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\emman\\Downloads\\crm\\crm\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-08-08T20:24:00.148Z",
-              "EditorCaption": ""
             }
           ]
         }

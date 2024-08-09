@@ -292,7 +292,7 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Membership";
             // 
-            // frmBillingRegisterPayment
+            // RegisterPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -308,7 +308,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.Name = "frmBillingRegisterPayment";
+            this.Name = "RegisterPayment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Checkout";
             this.Load += new System.EventHandler(this.frmBillingRegisterPayment_Load);

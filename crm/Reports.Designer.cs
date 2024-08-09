@@ -92,12 +92,12 @@
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 462);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 462);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(731, 457);
+            this.dataGridView1.Size = new System.Drawing.Size(731, 460);
             this.dataGridView1.TabIndex = 13;
             // 
             // label7
@@ -106,7 +106,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semilight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(1372, 45);
+            this.label7.Location = new System.Drawing.Point(1374, 45);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(99, 15);
             this.label7.TabIndex = 14;
@@ -118,7 +118,7 @@
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Controls.Add(this.lblTranNumber);
-            this.panel4.Location = new System.Drawing.Point(1375, 63);
+            this.panel4.Location = new System.Drawing.Point(1377, 63);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(209, 54);
             this.panel4.TabIndex = 29;
@@ -157,7 +157,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lblActive);
             this.panel1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(720, 63);
+            this.panel1.Location = new System.Drawing.Point(722, 63);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(217, 54);
             this.panel1.TabIndex = 25;
@@ -195,7 +195,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(1153, 43);
+            this.label5.Location = new System.Drawing.Point(1155, 43);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 17);
             this.label5.TabIndex = 15;
@@ -207,7 +207,7 @@
             this.dtpStartDate.CalendarFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpStartDate.CustomFormat = "MMM dd, yyyy";
             this.dtpStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpStartDate.Location = new System.Drawing.Point(1271, 22);
+            this.dtpStartDate.Location = new System.Drawing.Point(1273, 22);
             this.dtpStartDate.Name = "dtpStartDate";
             this.dtpStartDate.Size = new System.Drawing.Size(89, 20);
             this.dtpStartDate.TabIndex = 16;
@@ -218,7 +218,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(939, 40);
+            this.label3.Location = new System.Drawing.Point(941, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 17);
             this.label3.TabIndex = 17;
@@ -230,7 +230,7 @@
             this.dtpEndDate.CalendarFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpEndDate.CustomFormat = "MMM dd, yyyy";
             this.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpEndDate.Location = new System.Drawing.Point(1380, 22);
+            this.dtpEndDate.Location = new System.Drawing.Point(1382, 22);
             this.dtpEndDate.Name = "dtpEndDate";
             this.dtpEndDate.Size = new System.Drawing.Size(89, 20);
             this.dtpEndDate.TabIndex = 19;
@@ -247,7 +247,7 @@
             legend1.Name = "Legend1";
             legend1.TitleFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.charTopHours.Legends.Add(legend1);
-            this.charTopHours.Location = new System.Drawing.Point(749, 462);
+            this.charTopHours.Location = new System.Drawing.Point(751, 462);
             this.charTopHours.Name = "charTopHours";
             this.charTopHours.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalRight;
@@ -261,7 +261,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.charTopHours.Series.Add(series1);
-            this.charTopHours.Size = new System.Drawing.Size(1093, 457);
+            this.charTopHours.Size = new System.Drawing.Size(1093, 460);
             this.charTopHours.TabIndex = 30;
             this.charTopHours.Text = "chart2";
             title1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -277,7 +277,7 @@
             this.btnMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMonth.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMonth.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnMonth.Location = new System.Drawing.Point(1759, 12);
+            this.btnMonth.Location = new System.Drawing.Point(1761, 12);
             this.btnMonth.Name = "btnMonth";
             this.btnMonth.Size = new System.Drawing.Size(86, 32);
             this.btnMonth.TabIndex = 20;
@@ -290,7 +290,7 @@
             this.Active.AutoSize = true;
             this.Active.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Active.ForeColor = System.Drawing.Color.Black;
-            this.Active.Location = new System.Drawing.Point(716, 43);
+            this.Active.Location = new System.Drawing.Point(718, 43);
             this.Active.Name = "Active";
             this.Active.Size = new System.Drawing.Size(98, 17);
             this.Active.TabIndex = 18;
@@ -304,7 +304,7 @@
             this.btnLast7Days.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLast7Days.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLast7Days.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLast7Days.Location = new System.Drawing.Point(1678, 12);
+            this.btnLast7Days.Location = new System.Drawing.Point(1680, 12);
             this.btnLast7Days.Name = "btnLast7Days";
             this.btnLast7Days.Size = new System.Drawing.Size(86, 32);
             this.btnLast7Days.TabIndex = 21;
@@ -354,7 +354,7 @@
             series2.Name = "Series1";
             series2.ShadowColor = System.Drawing.Color.Green;
             this.chartGrossRevenue.Series.Add(series2);
-            this.chartGrossRevenue.Size = new System.Drawing.Size(1830, 324);
+            this.chartGrossRevenue.Size = new System.Drawing.Size(1832, 327);
             this.chartGrossRevenue.TabIndex = 28;
             this.chartGrossRevenue.Text = "chart1";
             title2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -370,7 +370,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(1597, 12);
+            this.button5.Location = new System.Drawing.Point(1599, 12);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(86, 32);
             this.button5.TabIndex = 22;
@@ -384,7 +384,7 @@
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.lblIncome);
             this.panel3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(1157, 63);
+            this.panel3.Location = new System.Drawing.Point(1159, 63);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(208, 54);
             this.panel3.TabIndex = 27;
@@ -424,7 +424,7 @@
             this.btnCustomDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomDate.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomDate.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCustomDate.Location = new System.Drawing.Point(1516, 12);
+            this.btnCustomDate.Location = new System.Drawing.Point(1518, 12);
             this.btnCustomDate.Name = "btnCustomDate";
             this.btnCustomDate.Size = new System.Drawing.Size(86, 32);
             this.btnCustomDate.TabIndex = 23;
@@ -438,7 +438,7 @@
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.lblVisitors);
             this.panel2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(943, 63);
+            this.panel2.Location = new System.Drawing.Point(945, 63);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(208, 54);
             this.panel2.TabIndex = 26;
@@ -478,7 +478,7 @@
             this.btnOkCustomDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOkCustomDate.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnOkCustomDate.ForeColor = System.Drawing.Color.Black;
-            this.btnOkCustomDate.Location = new System.Drawing.Point(1475, 12);
+            this.btnOkCustomDate.Location = new System.Drawing.Point(1477, 12);
             this.btnOkCustomDate.Name = "btnOkCustomDate";
             this.btnOkCustomDate.Size = new System.Drawing.Size(46, 32);
             this.btnOkCustomDate.TabIndex = 24;
@@ -506,10 +506,9 @@
             this.panelDashboard.Controls.Add(this.btnLast7Days);
             this.panelDashboard.Controls.Add(this.btnMonth);
             this.panelDashboard.Controls.Add(this.Active);
-            this.panelDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDashboard.Location = new System.Drawing.Point(0, 0);
+            this.panelDashboard.Location = new System.Drawing.Point(0, -3);
             this.panelDashboard.Name = "panelDashboard";
-            this.panelDashboard.Size = new System.Drawing.Size(1854, 931);
+            this.panelDashboard.Size = new System.Drawing.Size(1856, 934);
             this.panelDashboard.TabIndex = 31;
             // 
             // Reports
