@@ -283,6 +283,7 @@
             this.btnMonth.TabIndex = 20;
             this.btnMonth.Text = "Month";
             this.btnMonth.UseVisualStyleBackColor = false;
+            this.btnMonth.Click += new System.EventHandler(this.btnLast30Days_Click);
             // 
             // Active
             // 
@@ -310,6 +311,7 @@
             this.btnLast7Days.TabIndex = 21;
             this.btnLast7Days.Text = "Week";
             this.btnLast7Days.UseVisualStyleBackColor = false;
+            this.btnLast7Days.Click += new System.EventHandler(this.btnLast7Days_Click);
             // 
             // chartGrossRevenue
             // 
@@ -376,6 +378,7 @@
             this.button5.TabIndex = 22;
             this.button5.Text = "Today";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.btnToday_Click);
             // 
             // panel3
             // 
@@ -430,6 +433,7 @@
             this.btnCustomDate.TabIndex = 23;
             this.btnCustomDate.Text = "Custom Date";
             this.btnCustomDate.UseVisualStyleBackColor = false;
+            this.btnCustomDate.Click += new System.EventHandler(this.btnCustomDate_Click);
             // 
             // panel2
             // 
@@ -484,6 +488,7 @@
             this.btnOkCustomDate.TabIndex = 24;
             this.btnOkCustomDate.Text = "OK";
             this.btnOkCustomDate.UseVisualStyleBackColor = false;
+            this.btnOkCustomDate.Click += new System.EventHandler(this.btnOkCustomDate_Click);
             // 
             // panelDashboard
             // 

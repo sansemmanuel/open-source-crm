@@ -7,12 +7,3 @@ C:\Users\emman\Downloads\crm\Negocio\obj\Debug\Business.csproj.CoreCompileInputs
 C:\Users\emman\Downloads\crm\Negocio\obj\Debug\Business.csproj.Up2Date
 C:\Users\emman\Downloads\crm\Negocio\obj\Debug\Business.dll
 C:\Users\emman\Downloads\crm\Negocio\obj\Debug\Business.pdb
-C:\Users\emman\Downloads\crm\Business\bin\Debug\Business.dll
-C:\Users\emman\Downloads\crm\Business\bin\Debug\Business.pdb
-C:\Users\emman\Downloads\crm\Business\bin\Debug\Domain.dll
-C:\Users\emman\Downloads\crm\Business\bin\Debug\Domain.pdb
-C:\Users\emman\Downloads\crm\Business\obj\Debug\Business.csproj.AssemblyReference.cache
-C:\Users\emman\Downloads\crm\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
-C:\Users\emman\Downloads\crm\Business\obj\Debug\Business.csproj.Up2Date
-C:\Users\emman\Downloads\crm\Business\obj\Debug\Business.dll
-C:\Users\emman\Downloads\crm\Business\obj\Debug\Business.pdb
