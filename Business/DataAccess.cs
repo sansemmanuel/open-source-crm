@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.SqlClient;
-using Dominio;
 using System.Data;
 namespace Negocio
 {
@@ -22,7 +17,7 @@ namespace Negocio
             conexion = new SqlConnection("");
             comando = new SqlCommand();
         }
-
+        //Data Source=(local)\\SQLEXPRESS;Initial Catalog=sparktech;Integrated Security=True;
         public void setearConsulta(string consulta)
         {
             comando.CommandType = System.Data.CommandType.Text;

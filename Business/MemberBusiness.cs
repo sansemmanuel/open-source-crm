@@ -44,7 +44,7 @@ namespace Negocio
 
 
         private string connectionString = "";
-
+//Data Source=(local)\\SQLEXPRESS;Initial Catalog=sparktech;Integrated Security=True;
 
         #region Conection and Ex
         private SqlConnection GetConnection()

@@ -1,0 +1,3 @@
+C:\Users\emman\Downloads\crm\crm\bin\Debug\Management System.exe
+C:\Users\emman\Downloads\crm\crm\bin\Debug\Domain.dll
+C:\Users\emman\Downloads\crm\crm\bin\Debug\FontAwesome.Sharp.dll

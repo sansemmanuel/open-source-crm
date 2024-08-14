@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Crm;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace TPFinalNivel2_Sansberro
         public AddMembership()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           AddNewMembership addNewMembership = new AddNewMembership();
+            addNewMembership.Show();
         }
     }
 }
